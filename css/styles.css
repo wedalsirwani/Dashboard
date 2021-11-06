@@ -1,0 +1,121 @@
+.bg-purple {
+  color: white!important;
+  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+}
+
+.bg-pink {
+  border-color: #da4167!important;
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+
+
+.navbar {
+  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+}
+
+.navbar-brand {
+  color: white!important;
+}
+
+.p-menu {
+  color: black;
+}
+
+.p-menu:hover {
+  color: blue;
+}
+
+.row-proudct {
+  border: 0.5px solid rgba(68, 66, 66, 0.123);
+  border-radius: 5px ;
+  padding-left: 0rem;
+}
+
+.btn-details {
+  color: white;
+  background: linear-gradient(135deg, #37315e, rgb(64, 29, 186))!important;
+}
+
+.btn-delete {
+  border-color: #da4167;
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+.proudct-text2 {
+color: green !important;
+font-weight: bold;
+}
+
+.text-1 {
+color: rgba(68, 66, 66, 0.582) !important;
+font-size: 11px;
+}
+
+.row-1 {
+  border: 0.5px solid rgba(68, 66, 66, 0.123);
+}
+
+.dash-li {
+  border: 0.5px solid rgba(143, 24, 24, 0.856);
+}
+
+.col-sm-3 {
+  border: 0.5px solid rgba(68, 66, 66, 0.123);
+}
+
+.card-c1 {
+  border-color: #da4167!important;
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+
+.card-footer {
+  border-color: #da4167!important;
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+}
+
+.footer-text {
+  text-decoration: underline !important;
+  font-size: 13px;
+}
+
+.footer-icon {
+  padding-top: 4px;
+  font-size: 12px;
+  color: white;
+}
+
+.col-6 {
+  border: 0.5px solid rgba(68, 66, 66, 0.123);
+}
+
+.header-text {
+  padding-left: 8px;
+  font-size: 14px; 
+}
+
+.header-icon {
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+.search-btn {
+  background: linear-gradient(227deg, rgba(220, 92, 124, 1) 0%, rgba(218, 65, 103, 1) 100%)!important;
+  color: white!important;
+}
+
+.user-btn{
+  background: none!important;
+  color: whitesmoke!important;
+}
+
