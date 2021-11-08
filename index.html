@@ -13,14 +13,16 @@
     <link href="css/styles.css" rel="stylesheet" />
 </head>
 <body>
+
 <!-- Navbar Brand-->
     <nav class="navbar navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Nrt Solution</a>
+
 <!-- Sidebar Toggle Icon-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" 
-        data-target="#sidebarIcon" aria-controls="" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="navbar-toggler-icon"></i>
+        <button type="button" id="sidebarCollapse" class="btn  btn-outline-info">
+            <i class="bi bi-list"></i>
         </button>
+
 <!-- Navbar Search -->
         <form>
             <div class="input-group">
@@ -32,23 +34,56 @@
                     </div>
             </div>
         </form>
+
 <!-- User Profile --> 
-        <button class="btn dropdown-toggle user-btn" type="button" id="userIcon" 
-        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="bi bi-person-fill"></i>
+        <button type="button" id="userIcon" class="btn user-btn">
+        <i class="bi bi-person-fill"></i>
         </button>
     </nav>
+
 <!-- Sidebar -->
-    <div>
-        <div>
-            <nav>
-            </nav>
-        </div>
-<!-- The Main Content -->
-        <div>
+<div class="wrapper">
+        <nav id="sidebar">
+            <ul class="sidebar-list elements">
+                <li>
+                    <a href=""><span><i class="bi bi-house-fill"></i></span>Home</a>
+                </li>
+                <li>
+                    <a href="products.html">Products</a>
+                </li>
+
+            <li>
+                <a href="#orders" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Orders</a>
+                <ul class="collapse sidebar-list" id="orders">
+                    <li>
+                        <a href="">One</a>
+                    </li>
+                    <li>
+                        <a href="">Two</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#reports" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Reports</a>
+                <ul class="collapse sidebar-list" id="reports">
+                    <li>
+                        <a href="">One</a>
+                    </li>
+                    <li>
+                        <a href="">Two</a>
+                    </li>
+                </ul>
+            </li>
+
+                <li>
+                    <a href="">Customers</a>
+                </li>
+            </ul>
             
-    <main>
+        </nav>
 <!-- --------------------------------------------------------------------------------------------- -->
+<main>
         <div class="container-fluid p-2">
             <h3>Dashboard</h3>
             <h6 class="text-1">Dashboard</h6>
@@ -662,20 +697,32 @@
                 </div>
             </div>
         </div>
-    </main>
+</main>
 
-            <footer>
-            </footer>
-        </div>
-    </div>
+    <footer>
+    </footer>
+
+</div>
 
     <script src="js/charts.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script>$(document).ready( function () {
-        $('#customersTable').DataTable();
-    } );</script>
+
+<script>
+    $(document).ready( function () {
+        $("#customersTable").DataTable();
+    } );
+
+    $(document).ready(function () {
+        $("#sidebarCollapse").on("click", function () {
+            $("#sidebar").toggleClass("active");
+        });
+    });
+</script>
+
+
+
 </body>
 </html>
